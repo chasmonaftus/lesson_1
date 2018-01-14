@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var money = parseInt(prompt("Введите сумму вклада"));
+var persent = parseInt(prompt("Введите годовой процент"));
+var persent_year = parseInt(prompt("На сколько лет расчитать ваш вклад?"));
+var year = 1;
+var total = money + (money * (persent / 100));
+
+while(year <= persent_year)
+{
+	year++;
+	alert("На " + year + " год ваш вклад будет составлять " + total);
+	var total = total + (money * (persent / 100));
+
+}
+
+	
+
+
+
+
+</script>
